@@ -5,8 +5,26 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Portfolio</title>
+        
+        <meta name="description" content="Personal Portfolio" />
+        <meta name="title" property="og:title" content="Portfolio" />
+        <meta property="og:type" content="Website" />
+        <meta 
+            name="image" 
+            property="og:image" 
+            content="https://live.staticflickr.com/65535/51333978554_18d5d7371b_h.jpg" 
+        />
+        <meta 
+            name="description" 
+            property="og:description" 
+            content="Personal Portfolio" 
+        />
+        <meta name="author" content="Abhishek Kumar" />
+        
+        <title>Abhishek Kumar's Portfolio</title>
         <link rel="stylesheet" href="css/style.css" />
+
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     
         <!--fav-icon-->
         <link rel="icon" href="images/favicon.ico">
@@ -30,7 +48,6 @@
     </head>
   
     <body>
-        
         <!--main-->
         <section id="main">
         
@@ -49,8 +66,8 @@
                 <ul class="menu">
                     <li><a href="#main">Home</a></l>
                     <li><a href="#skills">Skills</a></li>
-                    <li><a href="#recent">Recent</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#recents">Projects</a></li>
+                    <li><a href="#contacts">Contact</a></li>
                 </ul>
                 
                 <div class="btns">
@@ -78,7 +95,7 @@
         </section>
 
         <!--skills------------->
-        <section id="skills">
+        <section id="skills" class="floating">
             
             <!--text--------->
             <div class="skill-text">
@@ -175,7 +192,7 @@
                                         <!--skill-box-text--------->
                                         <div class="s-box-text">
                                             <strong>HTML</strong>
-                                            <p>I have basic skills in HTML and I completed 5+ HTML project.</p><br>
+                                            <p>I have basic skills in HTML and I completed 5+ HTML project.</p>
                                         </div>
                 
                                     </div>
@@ -210,14 +227,67 @@
         
         </section>
 
+        <section id="recents">
+            <br><br>
+        </section>
+
+        <!--recent-project---------------------------->
+	    <section id="recent">
+            
+            <!--heading--------------->
+            <div class="recent-heading">
+                <span>Recent</span>
+                <h3>Personal Projects </h3>
+            </div><br><br>
+
+            <header class = "project-head">
+                <h1>1. Mukti</h1><br>
+            </header>
+            
+            <div class="project">
+                
+                <div class="lg-img" data-aos="fade-left">
+                    <img src="images/mukti1.png">
+                </div>
+                
+                <div data-aos="fade-right">
+                    <img src="images/mukti2.png">
+                </div>
+
+            </div><br><br>
+
+            <header class = "project-head">
+                <h1>2. FlutterShare</h1><br>
+            </header>
+            
+            <div class="project">
+                
+                <div data-aos="fade-left">
+                    <img src="images/fluttershare1.png">
+                </div>
+                
+                <div class="lg-img" data-aos="fade-right">
+                    <img src="images/fluttershare2.png">
+                </div>
+
+            </div>
+        
+        </section><br>
+
+        <section id="contacts">
+            <br><br>
+        </section>
+
         <!--contact------------------------->
 	    <section id="contact">
 
-            <!--img-------->
-	        <img src="images/contact.svg"/>
-            
             <!--heading---------------->
             <h3>Contact Me</h3>
+            
+            <!--img-------->
+            <div data-aos="zoom-in">
+                <img src="images/contact.svg"/>
+            </div>
             
             <!--input----------------->
             <div class="contact-input">
@@ -250,22 +320,32 @@
         
         </footer>
 
-    <script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            
+            AOS.init({
+                offset: 300,
+                duration: 1000,
+            });
+            
+        </script>
         
-        var mode = document.getElementById("mode");
-        console.log(mode);
+        <script>
+            
+            var mode = document.getElementById("mode");
+            console.log(mode);
 
-        mode.onclick = function(){
-            document.body.classList.toggle("dark-theme");
-            if(document.body.classList.contains("dark-theme")) {
-                mode.src="images/sun.png";
+            mode.onclick = function(){
+                document.body.classList.toggle("dark-theme");
+                if(document.body.classList.contains("dark-theme")) {
+                    mode.src="images/sun.png";
+                }
+                else{
+                    mode.src="images/moon.png";
+                }
             }
-            else{
-                mode.src="images/moon.png";
-            }
-        }
-    
-    </script>
+        
+        </script>
 
     </body>
 
