@@ -312,7 +312,7 @@ td {
 
 #contact h3 {
   font-size: 3rem;
-  margin: 20px 0px 20px 0px;
+  margin: 20px 0px;
   font-weight: 600;
   color: var(--secondary-color);
 }
@@ -681,12 +681,10 @@ footer p {
   .social-menu ul li {
 	padding-left: 10px;
   }
-}
-
-
-@media only screen and (max-width: 991px) {
-	.project image {
-		margin: 1.5%;
-		width: 90%;
-	}
+  .contact-input input {
+    font-weight: 500;
+  }
+  .contact-input a {
+    font-size: 0.9rem;
+  }
 }
