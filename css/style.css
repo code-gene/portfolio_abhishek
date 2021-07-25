@@ -280,10 +280,6 @@ td {
 	width: 60%;
 }
 
-.lg-img img {
-  width: 40%;
-}
-
 .project-head h1 {
 	color: var(--secondary-color);
 	font-size: 2rem;
