@@ -327,6 +327,13 @@
                 offset: 300,
                 duration: 1000,
             });
+
+            document.querySelectorAll('img').
+                forEach((img) => 
+                    img.addEventListener('load',() =>
+                        AOS.refresh()
+                )
+            );
             
         </script>
         
