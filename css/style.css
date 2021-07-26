@@ -307,7 +307,11 @@ td {
   border: none;
   outline: none;
   text-align: center;
+  padding-left: 15px;
+  font-weight: 700;
+  font-style: italic;
   color: #242425;
+  font-size: 15px;
 }
 .contact-input a {
   width: 200px;
@@ -573,6 +577,19 @@ footer p {
   .menu-icon{
 	  margin-left: 60px;
   }
+
+  .contact-input input {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    text-align: center;
+    padding-left: 15px;
+    font-weight: 700;
+    font-style: italic;
+    color: #242425;
+    font-size: 15px;
+  }
 }
 @media (max-width: 720px) {
   .model {
@@ -632,6 +649,20 @@ footer p {
   .social-menu ul {
     margin-right: 75px;
   }
+
+  .contact-input input {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    text-align: center;
+    padding-left: 15px;
+    font-weight: 700;
+    font-style: italic;
+    color: #242425;
+    font-size: 15px;
+  }
+
 }
 @media (max-width: 540px) {
   .contact-input {
@@ -671,7 +702,61 @@ footer p {
   .social-menu ul {
     margin-right: 75px;
   }
+
+  .contact-input input {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    text-align: center;
+    padding-left: 15px;
+    font-weight: 700;
+    font-style: italic;
+    color: #242425;
+    font-size: 15px;
+  }
   
+}
+
+@media (max-width: 400px) {
+  .contact-input {
+    width: 350px;
+    height: 50px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    margin-left: 40px;
+    border-radius: 50px;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.15);
+  }
+  .contact-input input {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    text-align: center;
+    padding-left: 15px;
+    font-weight: 700;
+    font-style: italic;
+    color: #242425;
+  }
+  .contact-input a {
+    width: 175px;
+    height: 35px;
+    background-color: #1db096;
+    color: #ffffff;
+    display: flex;
+    font-size: 0.9rem;
+    justify-content: center;
+    align-items: center;
+    margin: auto 10px;
+    border-radius: 20px;
+    font-weight: 500;
+  }
+
+  .social-menu ul {
+    margin-right: 35px;
+  }
 }
 
 
