@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 :root {
-  --primary-color: #fff;
+  --primary-color: #f6f8f6;
   --secondary-color: #414141;
   --skill-font-color: rgb(85, 85, 85);
 }
@@ -17,9 +17,12 @@ body {
   margin: 0px;
   padding: 0px;
   font-family: poppins;
-  background-image: url("../images/background.png");
+  /* background-image:url("../images/background1.gif"); */
+  background-image:url("../images/background2.gif"); 
+  background-repeat:repeat;
+  /* background-image: url("../images/background.png"); */
   background-position: center;
-  background-size: 800px;
+  background-size: 600px;
   align-items: center;
   background-color: var(--primary-color);
 }
@@ -114,7 +117,7 @@ nav ul li a:hover {
 }
 .main-text {
   width: 750px;
-  padding: 50px;
+  padding: 20px 50px;
   background-color: var(--primary-color);
 }
 .main-text h1 {
@@ -122,6 +125,8 @@ nav ul li a:hover {
   color: var(--secondary-color);
   margin: 0px 0px 10px 0px;
   line-height: 60px;
+  font-weight: 700;
+  font-style: italic;
 }
 
 .portfolio-btn {
@@ -152,13 +157,12 @@ nav ul li a:hover {
 }
 .skill-text {
   width: 750px;
-  background-color: var(--primary-color);
+  /* background-color: var(--primary-color); */
   padding: 50px;
 }
 
 table {
   border-spacing: 30px;
-  background-color: var(--primary-color);
 }
 
 td {
@@ -173,6 +177,7 @@ td {
   text-transform: uppercase;
   background-color: var(--primary-color);
   letter-spacing: 1px;
+  margin-top: 5px;
   font-size: 1rem;
 }
 
@@ -190,6 +195,7 @@ td {
   margin-top: 20px;
 }
 .skill-box {
+  background-color: var(--primary-color);
   display: flex;
 }
 .s-box-icon {
@@ -276,6 +282,7 @@ td {
 	font-size: 2rem;
 	font-weight: 700;
 	letter-spacing: 1px;
+  background-color: var(--primary-color);
 }
 
 .img-lg img{
